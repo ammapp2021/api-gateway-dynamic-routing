@@ -1,1 +1,1 @@
-Use MySQL "Command Line Clinet"
+Use MySQL "Command Line Client"
