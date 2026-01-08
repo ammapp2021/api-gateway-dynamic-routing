@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: API-GATEWAY
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/gatewaydb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: false 
+          httpclient:
+            ssl:
+              use-insecure-trust-manager: true
+            connect-timeout: 5000
+            response-timeout: 10000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      access: unrestricted 
