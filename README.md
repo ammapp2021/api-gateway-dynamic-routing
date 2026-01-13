@@ -41,8 +41,6 @@ POST http://localhost:8080/admin/routes
 4. Delete a Route
 To delete a route, use:
 
-bash
-Copy code
 DELETE http://localhost:8080/admin/routes/{route-id}
 5. Using the Authorization Token
 Include the token in the Authorization header for all protected APIs:
