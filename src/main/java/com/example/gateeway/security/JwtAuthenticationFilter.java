@@ -26,7 +26,7 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
        // if (path.startsWith("/auth/login")) {
          //   return chain.filter(exchange);
         //}
-      if (path.startsWith("/auth")) {
+      if (path.startsWith("/auth")|| path.startsWith("/actuator")) {
            return chain.filter(exchange);
        }
 
@@ -53,7 +53,7 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
 	@Override
 	public int getOrder() {
-		// TODO Auto-generated method stub
-		return -2;
+
+		return -50;
 	}
 }

@@ -1,4 +1,5 @@
-package com.example.gateeway.service;
+//for db
+/*package com.example.gateeway.service;
 
 import com.example.gateeway.model.RouteEntity;
 import com.example.gateeway.repository.RouteRepository;
@@ -84,4 +85,4 @@ public class RouteServiceImpl implements RouteService {
             return Mono.empty();
         });
     }
-}
+}*/

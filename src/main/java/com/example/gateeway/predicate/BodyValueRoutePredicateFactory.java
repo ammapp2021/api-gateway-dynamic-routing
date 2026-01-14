@@ -20,7 +20,7 @@ public class BodyValueRoutePredicateFactory extends AbstractRoutePredicateFactor
     public Predicate<ServerWebExchange> apply(Config config) {
         return exchange -> {
             String cachedBody = exchange.getAttribute("cachedBody");
-          
+
             return cachedBody == null || cachedBody.contains("\"value\":\"" + config.getValue() + "\"");
         };
     }

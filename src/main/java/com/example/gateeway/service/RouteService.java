@@ -1,4 +1,5 @@
-package com.example.gateeway.service;
+//for db
+/*package com.example.gateeway.service;
 
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.stereotype.Service;
@@ -14,4 +15,4 @@ public interface RouteService {
     Mono<Void> saveRoute(Mono<RouteDefinition> routeMono);
 
     Mono<Void> deleteRoute(Mono<String> routeId);
-}
+}*/

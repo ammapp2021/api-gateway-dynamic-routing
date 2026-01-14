@@ -1,4 +1,5 @@
-package com.example.gateeway.config;
+//for db
+/*package com.example.gateeway.config;
 
 import com.example.gateeway.service.RouteService;
 import org.springframework.cloud.gateway.route.RouteDefinition;
@@ -9,8 +10,8 @@ import reactor.core.publisher.Mono;
 
 @Component
 public class DynamicRouteRepository implements RouteDefinitionRepository {
-
-    private final RouteService routeService;
+/*implementation via db*/
+    /*private final RouteService routeService;
 
     public DynamicRouteRepository(RouteService routeService) {
         this.routeService = routeService;
@@ -30,4 +31,4 @@ public class DynamicRouteRepository implements RouteDefinitionRepository {
     public Mono<Void> delete(Mono<String> routeId) {
         return routeService.deleteRoute(routeId);
     }
-}
+}*/

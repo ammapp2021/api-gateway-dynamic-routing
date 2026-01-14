@@ -1,3 +1,4 @@
+
 package com.example.gateeway.config;
 
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -18,7 +19,7 @@ public class CacheRequestBodyFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
-  
+
         if (exchange.getRequest().getMethod() != null &&
                 "POST".equalsIgnoreCase(exchange.getRequest().getMethod().name())) {
 
@@ -29,7 +30,7 @@ public class CacheRequestBodyFilter implements GlobalFilter, Ordered {
                         DataBufferUtils.release(dataBuffer);
 
                         String bodyString = new String(bytes);
-                        
+
                         exchange.getAttributes().put("cachedBody", bodyString);
 
                         ServerHttpRequest mutatedRequest = new ServerHttpRequestDecorator(exchange.getRequest()) {
@@ -48,7 +49,7 @@ public class CacheRequestBodyFilter implements GlobalFilter, Ordered {
 
     @Override
     public int getOrder() {
-        
-        return -5; 
+
+        return -100;
     }
 }

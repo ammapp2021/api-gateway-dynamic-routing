@@ -1,4 +1,5 @@
-package com.example.gateeway.model;
+//for db
+/*package com.example.gateeway.model;
 
 import jakarta.persistence.*;
 
@@ -44,3 +45,4 @@ public class RouteEntity {
     public boolean isEnabled() { return enabled; }
     public void setEnabled(boolean enabled) { this.enabled = enabled; }
 }
+*/

@@ -1,4 +1,5 @@
-package com.example.gateeway.repository;
+//for db
+/*package com.example.gateeway.repository;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,3 +10,4 @@ import com.example.gateeway.model.RouteEntity;
 public interface RouteRepository extends JpaRepository<RouteEntity, String> {
     List<RouteEntity> findByEnabledTrue();
 }
+*/

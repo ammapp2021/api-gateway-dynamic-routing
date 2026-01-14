@@ -15,6 +15,8 @@ public class SecurityConfig {
 	        .authorizeExchange()
 	        .pathMatchers("/auth/**").permitAll()
 	        .pathMatchers("/actuator/**").permitAll()
+				//.pathMatchers("/admin/routes/**").permitAll()
+				.pathMatchers("/admin/**").permitAll()
 	        .anyExchange().permitAll()    
 	        .and()
 	        .httpBasic().disable()
